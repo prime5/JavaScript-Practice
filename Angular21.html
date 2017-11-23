@@ -1,0 +1,19 @@
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <body>
+    <div ng-app="myApp">
+      <!-- directive: my-test -->
+      <script>
+        var app = angular.module("myApp", []);
+        app.directive("myTest", function(){
+          return{
+            restrict: 'M',
+            replace: true,
+            template: "<h4> Directive in comment </h4>"
+          };
+        });
+      </script>
+  </body>
+</head>
+</html>

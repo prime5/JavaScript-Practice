@@ -1,0 +1,15 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js">
+</script>
+<body>
+  <div ng-app="" ng-init="names=[{name:'Prime', movie: 'Transformers'}, {name:'Optimus', movie:'Transformers'}, {name:'neo', movie: 'Matrix'}]">
+    <ol>
+      <li ng-repeat="x in names">
+        {{x.name+ ', '+x.movie}}
+      </li>
+    </ol>
+  </div>
+</body>
+</head>
+</html>
