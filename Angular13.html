@@ -1,0 +1,16 @@
+<!-- Expressions and ng-bind with arrays -->
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <body>
+    <div ng-app="" ng-init="arr=[1,2,3,4,5]">
+      <p>
+        The fourth element in the array using expressions is {{arr[3]}}
+      </p>
+      <p>
+        The third element in the array using ng-bind is <span ng-bind="arr[2]"></span>
+      </p>
+    </div>
+  </body>
+</head>
+</html>

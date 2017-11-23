@@ -1,0 +1,15 @@
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <body>
+    <div ng-app="" ng-init="person={firstName: 'Pramathesh', lastName: 'Malshe'}">
+      <p>
+        The last name using expressions is {{person.lastName}}
+      </p>
+      <p>
+        The first name using ng-bind is <span ng-bind="person.firstName"></span>
+      </p>
+    </div>
+  </body>
+</head>
+</html>
