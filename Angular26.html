@@ -1,0 +1,18 @@
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<body>
+<div ng-app="myApp" ng-controller="namesCtrl">
+  First Name is: {{firstName}}<br />
+  First Name is: {{lastName}}<br />
+  Full Name is: {{fullName()}}
+  <ul>
+    <li ng-repeat="x in names">
+      {{x.name +', '+x.country}}
+    </li>
+  </ul>
+</div>
+<script src="namesController.js"></script>
+</body>
+</head>
+</html>

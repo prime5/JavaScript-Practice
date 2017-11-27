@@ -1,0 +1,15 @@
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <body>
+    <form ng-app="" name="myForm" ng-init="myText='myemail@web.com'" >
+      Email:<input type="email" name="myAddress" ng-model="myText" required />
+      <h1>Application Status</h1>
+      {{myText}}
+      {{myForm.myAddress.$valid}}
+      {{myForm.myAddress.$dirty}}
+      {{myForm.myAddress.$touched}}
+    </form>
+  </body>
+</head>
+</html>

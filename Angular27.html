@@ -1,0 +1,23 @@
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <body>
+    <div ng-app="myApp">
+      The value of color at root:<h1>{{color}}</h1>
+      <div ng-controller="myCtrl">
+        The current scope value: <h1>{{color}}</h1>
+      </div>
+      Coming back to root value of color:<h1>{{color}}</h1>
+    </div>
+    <script>
+    var app=angular.module("myApp",[]);
+    app.run(function($rootScope){
+      $rootScope.color="Black";
+    });
+    app.controller("myCtrl",function($scope){
+      $scope.color = "Blue";
+    });
+    </script>
+  </body>
+</head>
+</html>

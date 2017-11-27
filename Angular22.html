@@ -1,0 +1,22 @@
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+  <body>
+    <form ng-app="myApp" ng-controller="myCtrl" name="myForm">
+      Name: <input ng-model="name" />
+      <h1>You entered: {{name}}</h1>
+<br />
+      Email
+      <input type="email" name="myAddress" ng-model="text"/>
+      <span ng-show="myForm.myAddress.$error.email">Not a valid e-mail address</span>
+    </form>
+    <script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope){
+  $scope.name = "John Doe";
+});
+    </script>
+  </body>
+</head>
+
+</html>

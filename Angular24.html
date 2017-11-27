@@ -1,0 +1,17 @@
+<!-- Angular and CSS ng-model providing css classes -->
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<style>
+input.ng-invalid {
+    background-color: lightblue;
+}
+</style>
+<body>
+
+<form ng-app="" name="myForm">
+    Name:
+    <input name="myName" ng-model="myText" required>
+  </form>
+
+</body>
+</html>
